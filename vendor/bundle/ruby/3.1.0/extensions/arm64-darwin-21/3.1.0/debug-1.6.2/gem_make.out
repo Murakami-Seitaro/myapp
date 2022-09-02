@@ -1,0 +1,16 @@
+current directory: /Users/tamihiro4786/Desktop/myapp/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+/Users/tamihiro4786/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/tamihiro4786/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220902-14187-659hzo.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tamihiro4786/Desktop/myapp/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= clean
+
+current directory: /Users/tamihiro4786/Desktop/myapp/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/tamihiro4786/Desktop/myapp/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 debug.bundle ./.gem.20220902-14187-vp2otp/debug
