@@ -1,0 +1,15 @@
+current directory: /Users/tamihiro4786/Desktop/myapp/vendor/bundle/ruby/3.1.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+/Users/tamihiro4786/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/tamihiro4786/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220903-63623-6dc1pp.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tamihiro4786/Desktop/myapp/vendor/bundle/ruby/3.1.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make DESTDIR\= clean
+
+current directory: /Users/tamihiro4786/Desktop/myapp/vendor/bundle/ruby/3.1.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make DESTDIR\=
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/tamihiro4786/Desktop/myapp/vendor/bundle/ruby/3.1.0/gems/debug_inspector-1.1.0/ext/debug_inspector
+make DESTDIR\= install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 debug_inspector.bundle ./.gem.20220903-63623-cvm3c1
