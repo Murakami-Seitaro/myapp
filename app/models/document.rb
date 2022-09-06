@@ -54,7 +54,7 @@ class Document < ApplicationRecord
 
   # お気に入り機能の設定
   def favorited_by?(custoner)
-    favorites.where(customer_id: end_user.id).exists?
+    favorites.where(customer_id: customer.id).exists?
   end
 
   # キーワード検索の設定
