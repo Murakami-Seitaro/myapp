@@ -9,4 +9,5 @@
 #
 class Tag < ApplicationRecord
   has_many :tag_documents, dependent: :destroy
+  has_many :documents, through: :tag_documents
 end

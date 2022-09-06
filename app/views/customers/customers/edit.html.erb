@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-6 offset-3 text-center">
+      <h2 class="font-weight-bold">ユーザー情報の編集</h2>
+      <%= form_with model: @customers do |f| %>
+        <!--画像-->
+        <div class="form-group text-left mt-3 col-8 offset-2">
+          <%= f.label :profile_image %></br>
+          <%= f.file_field :profile_image, placeholder: "プロフィール画像", accept: "image/*" %>
+        </div>
+        <!--名前-->
+        <div class="form-group text-left mt-3 col-8 offset-2">
+          <%= f.label :name %></br>
+          <%= f.text_field :name, autofocus: true, id: "inputName", placeholder: "20文字以内",
+              class: "form-control form-control-sm" %>
+        </div>
+        <!--ボタン-->
+        <div class="form-group mb-5">
+          <%= f.submit "編集内容を保存", class: "btn btn-outline-info rounded-pill w-50 mt-1" %>
+        </div>
+      <% end %>
+      <!--戻るボタン-->
+      <%= link_to @customers, class: "customers_#{@customers.id}" do %>
+        <div class="flex-colum mx-3 text_center">
+          <i class="fas fa-arrow-circle-left"></i> マイページへ戻る
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

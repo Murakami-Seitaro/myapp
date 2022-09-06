@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div class="row">
+    <!--タイトル-->
+    <div class="col-6 offset-3 text-center">
+      <h2 class="font-weight-bold">キーワード検索結果</h2>
+    </div>
+    <!--ユーザーの一覧-->
+    <div class="col-11 offset-1 text-left">
+      <%= render "admins/customers/customers_card", customers: @customers_search %>
+    </div>
+    <!--ページネーション-->
+    <div class="col-6 offset-3 justify-content-center mt-3 mb-5 d-flex">
+      <%= paginate @customers_search %>
+    </div>
+  </div>
+</div>
