@@ -8,11 +8,11 @@ Rails.application.routes.draw do
   }
 
   # ゲストログイン
-  devise_scope :customer do
+  devise_scope :customers do
     post "customers/guest_sign_in", to: "customers/sessions#guest_sign_in"
   end
 
-  scope module: :customer do
+  scope module: :customers do
     root to: "homes#top"
     get "/about" => "homes#about"
 
@@ -31,7 +31,7 @@ Rails.application.routes.draw do
     end
   end
 
-  namespace :admin do
+  namespace :admins do
     get "/" => "homes#top"
 
     resources :customers, only: [:show, :edit, :update] do
