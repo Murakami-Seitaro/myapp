@@ -13,7 +13,7 @@
         </p>
         <div class="mb-5">
           <!--ログイン中の選択ボタン-->
-          <% if customers_signed_in? %>
+          <% if customer_signed_in? %>
             <%= link_to new_document_path, class: 'btn btn-info rounded-pill mx-3 my-1' do %>
               <div class="flex-colum mx-3 text_center">
                 <i class="fas fa-pen-nib"></i> 記録を書く
@@ -21,7 +21,7 @@
             <% end %>
           <!--ログイン前の選択ボタン-->
           <% else %>
-            <%= link_to new_customers_registration_path, class: 'btn btn-success rounded-pill mx-3 my-1' do %>
+            <%= link_to new_customer_registration_path, class: 'btn btn-success rounded-pill mx-3 my-1' do %>
               <div class="flex-colum mx-3 text_center">
                 <i class="fas fa-user-plus"></i> 新規登録
               </div>
