@@ -2,7 +2,6 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import 'header';
 
-// 全体の設定
 a, h2, h3, p {
   color: #292830;
   text-decoration: none !important;
@@ -20,7 +19,6 @@ body {
   margin-bottom: 120px;
 }
 
-// header
 header{
   height: 100px;
   background-color: #ece6d6;
@@ -36,7 +34,6 @@ header{
   display: none;
 }
 
-// footer
 footer {
   margin-top: auto;
   background-color: #ece6d6;
@@ -46,7 +43,6 @@ footer {
   color: #727068;
 }
 
-// message
 .notifications {
   color: #fff;
   text-align: center;
@@ -94,13 +90,10 @@ footer {
   }
 }
 
-// feeling button
-// ラジオボタンの丸を消す
 .hidden_radio {
   display: none;
 }
 
-// feelingアイコン
 .feeling_icon {
   font-size: 35pt;
   margin: 0 20px;
@@ -112,12 +105,10 @@ footer {
   transform: scale(0.99, 0.99) translateY(2px);
 }
 
-// アイコンが選択された時
 .check_radio {
   color: #3ec1d3;
 }
 
-// card
 .cards__item {
   flex-basis: 25%;
   padding-left: 8px;
@@ -128,7 +119,6 @@ footer {
   background-color: #b6b1a5;
 }
 
-// chart
 .chart-line {
   position: relative;
   width: 500px;
@@ -149,7 +139,6 @@ footer {
   top: 45%;
 }
 
-// pagination
 .pagination>li>a {
   border: none;
   color: #34495e;
@@ -165,9 +154,6 @@ footer {
   border-radius: 50%;
 }
 
-
-
-// 1000px以下の画面設定
 @media screen and (max-width: 1000px) {
   .hm-icon {
     display: block;
