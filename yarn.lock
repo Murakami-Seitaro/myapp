@@ -1041,11 +1041,6 @@
     "mkdirp" "^1.0.4"
     "rimraf" "^3.0.2"
 
-"@popperjs/core@^2.11.6":
-  "integrity" "sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw=="
-  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
-  "version" "2.11.6"
-
 "@rails/webpacker@5.4.3":
   "integrity" "sha512-tEM8tpUtfx6FxKwcuQ9+v6pzgqM5LeAdhT6IJ4Te3BPKFO1xrGrXugqeRuZ+gE8ASDZRTOK6yuQkapOpuX5JdA=="
   "resolved" "https://registry.npmjs.org/@rails/webpacker/-/webpacker-5.4.3.tgz"
@@ -1655,10 +1650,10 @@
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
 
-"bootstrap@^5.2.1":
-  "integrity" "sha512-UQi3v2NpVPEi1n35dmRRzBJFlgvWHYwyem6yHhuT6afYF+sziEt46McRbT//kVXZ7b1YUYEVGdXEH74Nx3xzGA=="
-  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.2.1.tgz"
-  "version" "5.2.1"
+"bootstrap@3.4.1":
+  "integrity" "sha512-yN5oZVmRCwe5aKwzRj6736nSmKDX7pLYwsXiCj/EYmo16hODaBiT4En5btW/jhBF/seV+XMx3aYwukYC3A49DA=="
+  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-3.4.1.tgz"
+  "version" "3.4.1"
 
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="
@@ -4012,10 +4007,10 @@
     "merge-stream" "^2.0.0"
     "supports-color" "^7.0.0"
 
-"jquery@^3.6.1":
-  "integrity" "sha512-opJeO4nCucVnsjiXOE+/PcCgYw9Gwpvs/a6B1LL/lQhwWwpbVEVYDZ1FokFr8PRc7ghYlrFPuyHuiiDNTQxmcw=="
-  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.1.tgz"
-  "version" "3.6.1"
+"jquery@3.4.1":
+  "integrity" "sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw=="
+  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.4.1.tgz"
+  "version" "3.4.1"
 
 "js-tokens@^3.0.0 || ^4.0.0", "js-tokens@^4.0.0":
   "integrity" "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
@@ -5786,6 +5781,11 @@
   "resolved" "https://registry.npmjs.org/querystringify/-/querystringify-2.2.0.tgz"
   "version" "2.2.0"
 
+"rails-ujs@^5.2.8-1":
+  "integrity" "sha512-1Xfgv21r3Ira7sgepnvLD546q8hm/uIokK7Ocoi4uLsXkT0HHg8vJaxKfBqbjdb24YeOGBily+jxfcAle7dMWA=="
+  "resolved" "https://registry.npmjs.org/rails-ujs/-/rails-ujs-5.2.8-1.tgz"
+  "version" "5.2.8-1"
+
 "randombytes@^2.0.0", "randombytes@^2.0.1", "randombytes@^2.0.5", "randombytes@^2.1.0":
   "integrity" "sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ=="
   "resolved" "https://registry.npmjs.org/randombytes/-/randombytes-2.1.0.tgz"
@@ -6815,6 +6815,11 @@
   "integrity" "sha512-JVa5ijo+j/sOoHGjw0sxw734b1LhBkQ3bvUGNdxnVXDCX81Yx7TFgnZygxrIIWn23hbfTaMYLwRmAxFyDuFmIw=="
   "resolved" "https://registry.npmjs.org/tty-browserify/-/tty-browserify-0.0.0.tgz"
   "version" "0.0.0"
+
+"turbolinks@^5.2.0":
+  "integrity" "sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw=="
+  "resolved" "https://registry.npmjs.org/turbolinks/-/turbolinks-5.2.0.tgz"
+  "version" "5.2.0"
 
 "type-is@~1.6.18":
   "integrity" "sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g=="
