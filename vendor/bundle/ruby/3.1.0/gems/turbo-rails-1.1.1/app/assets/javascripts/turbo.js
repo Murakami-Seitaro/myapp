@@ -103,7 +103,7 @@ class FrameElement extends HTMLElement {
   }
   attributeChangedCallback(name) {
     if (name == "loading") {
-      this.delegate.loadingStyleChanged();
+      this.delegate.loading();
     } else if (name == "src") {
       this.delegate.sourceURLChanged();
     } else {
@@ -2975,7 +2975,7 @@ class FrameController {
       this.loadSourceURL();
     }
   }
-  loadingStyleChanged() {
+  loading() {
     if (this.loadingStyle == FrameLoadingStyle.lazy) {
       this.appearanceObserver.start();
     } else {

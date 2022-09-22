@@ -455,19 +455,19 @@ module ActiveModel
         super
       else
         match = matched_attribute_method(method.to_s)
-        match ? attribute_missing(match, *args, &block) : super
+        match ? (match, *args, &block) : super
       end
     end
     ruby2_keywords(:method_missing)
 
-    # +attribute_missing+ is like +method_missing+, but for attributes. When
+    # ++ is like +method_missing+, but for attributes. When
     # +method_missing+ is called we check to see if there is a matching
-    # attribute method. If so, we tell +attribute_missing+ to dispatch the
+    # attribute method. If so, we tell ++ to dispatch the
     # attribute. This method can be overloaded to customize the behavior.
-    def attribute_missing(match, *args, &block)
+    def (match, *args, &block)
       __send__(match.target, match.attr_name, *args, &block)
     end
-    ruby2_keywords(:attribute_missing)
+    ruby2_keywords(:)
 
     # A +Person+ instance with a +name+ attribute can ask
     # <tt>person.respond_to?(:name)</tt>, <tt>person.respond_to?(:name=)</tt>,
