@@ -2,7 +2,7 @@
 #
 # Table name: customers
 #
-#  id                     :integer          not null, primary key
+#  id                     :bigint           not null, primary key
 #  email                  :string           default(""), not null
 #  encrypted_password     :string           default(""), not null
 #  is_deleted             :boolean          default(FALSE), not null
