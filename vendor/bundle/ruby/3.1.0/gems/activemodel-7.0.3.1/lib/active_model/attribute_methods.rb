@@ -464,10 +464,7 @@ module ActiveModel
     # +method_missing+ is called we check to see if there is a matching
     # attribute method. If so, we tell ++ to dispatch the
     # attribute. This method can be overloaded to customize the behavior.
-    def (match, *args, &block)
-      __send__(match.target, match.attr_name, *args, &block)
-    end
-    ruby2_keywords(:)
+    
 
     # A +Person+ instance with a +name+ attribute can ask
     # <tt>person.respond_to?(:name)</tt>, <tt>person.respond_to?(:name=)</tt>,
