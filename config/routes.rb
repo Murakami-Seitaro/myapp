@@ -1,25 +1,29 @@
 Rails.application.routes.draw do
-  devise_for :customers, skip: [:passwords], controllers: {
-    registrations: "customers/registrations",
-    sessions: "customers/sessions",
+  # devise/adminサイド
+  devise_for :admin, skip: [:registrations, :passwords], controllers: {
+    sessions: "admin/sessions",
   }
-  devise_for :admins, skip: [:registrations, :passwords], controllers: {
-    sessions: "admins/sessions",
+
+  # devise/publicサイド
+  devise_for :end_users, skip: [:passwords], controllers: {
+    registrations: "public/registrations",
+    sessions: "public/sessions",
   }
 
   # ゲストログイン
-  devise_scope :customers do
-    post "customers/guest_sign_in", to: "customers/sessions#guest_sign_in"
+  devise_scope :end_user do
+    post "end_users/guest_sign_in", to: "public/sessions#guest_sign_in"
   end
 
-  scope module: :customers do
+  # publicサイド
+  scope module: :public do
     root to: "homes#top"
     get "/about" => "homes#about"
 
-    resources :customers, only: [:show, :edit, :update] do
-      get "confirm" => "customers#confirm"
-      patch "withdrawal" => "customers#withdrawal"
-      get "favorites" => "customers#favorites"
+    resources :end_users, only: [:show, :edit, :update] do
+      get "confirm" => "end_users#confirm"
+      patch "withdrawal" => "end_users#withdrawal"
+      get "favorites" => "end_users#favorites"
     end
 
     resources :documents do
@@ -31,17 +35,16 @@ Rails.application.routes.draw do
     end
   end
 
-  namespace :admins do
+  # adminサイド
+  namespace :admin do
     get "/" => "homes#top"
 
-    resources :customers, only: [:show, :edit, :update] do
+    resources :end_users, only: [:show, :edit, :update] do
       collection do
-        get "word_search" => "customers#word_search"
+        get "word_search" => "end_users#word_search"
       end
     end
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

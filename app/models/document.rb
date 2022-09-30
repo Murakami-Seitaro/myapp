@@ -7,12 +7,13 @@
 #  feeling     :integer          default("happy"), not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
-#  customer_id :integer          not null
+#  end_user_id :integer          not null
 #
 class Document < ApplicationRecord
-  belongs_to :customers
+  belongs_to :end_user
 
   has_many :tag_documents, dependent: :destroy
+  has_many :tags, through: :tag_documents
   has_many :favorites, dependent: :destroy
 
   # feelingのenum設定
@@ -53,8 +54,8 @@ class Document < ApplicationRecord
   end
 
   # お気に入り機能の設定
-  def favorited_by?(custoner)
-    favorites.where(customer_id: customer.id).exists?
+  def favorited_by?(end_user)
+    favorites.where(end_user_id: end_user.id).exists?
   end
 
   # キーワード検索の設定

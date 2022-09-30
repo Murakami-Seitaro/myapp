@@ -9,8 +9,8 @@
 #  tag_id      :integer          not null
 #
 class TagDocument < ApplicationRecord
-  belongs_to :documents
-  belongs_to :tags
+  belongs_to :document
+  belongs_to :tag
 
   # バリデーションの設定
   validates :document_id, presence: true

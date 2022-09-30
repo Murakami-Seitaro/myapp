@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6 offset-3 text-center mt-3 mb-5">
+      <h2 class="font-weight-bold">キーワード検索結果</h2>
+    </div>
+    <!--記録の一覧-->
+    <div class="col-10 offset-1 text-left">
+      <%= render "public/documents/document_card", documents: @words_search %>
+    </div>
+    <!--ページネーション-->
+    <div class="col-6 offset-3 justify-content-center mt-3 mb-5 d-flex">
+      <%= paginate @words_search %>
+    </div>
+  </div>
+</div>
