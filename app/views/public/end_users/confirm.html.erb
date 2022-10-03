@@ -1,17 +1,18 @@
 <div class="container mt-4">
   <div class="row">
     <div class="offset-3 text-center">
-      <h2 class="font-weight-bold">退会の確認</h2>
+      <h2 class="font-weight-bold">退会確認</h2>
       <!--説明文-->
       <p class="mt-4">
-        退会するとマイページ等の閲覧ができなくなります。
-        本当によろしいですか。
+        い<br>
+        い<br>
+        退会してよろしいですか。
       </p>
       <!--退会ボタン-->
       <div class="mt-5">
-        <%= link_to "退会しない", customers_path(current_customers),
+        <%= link_to "退会しない", end_user_path(current_end_user),
             class: 'btn btn-outline-info rounded-pill w-50 mt-1' %>
-        <%= link_to "退会する", customers_withdrawal_path, method: :patch, 
+        <%= link_to "退会する", end_user_withdrawal_path, method: :patch, 
             class: 'btn btn-outline-danger rounded-pill w-50 mt-3' %>
       </div>
     </div>

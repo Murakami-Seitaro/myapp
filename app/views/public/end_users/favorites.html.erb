@@ -10,7 +10,7 @@
     <!--記録の一覧-->
     <div class="col-10 offset-1 text-left">
       <% if @favorite_list.present? %>
-        <%= render "customers/documents/document_card", documents: @favorite_list %>
+        <%= render "public/documents/document_card", documents: @favorite_list %>
       <% end %> 
     </div>
     <!--ページネーション-->

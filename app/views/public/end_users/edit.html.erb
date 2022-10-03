@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-6 offset-3 text-center">
       <h2 class="font-weight-bold">ユーザー情報の編集</h2>
-      <%= form_with model: @customers do |f| %>
+      <%= form_with model: @end_user do |f| %>
         <!--画像-->
         <div class="form-group text-left mt-3 col-8 offset-2">
           <%= f.label :profile_image %></br>
@@ -20,7 +20,7 @@
         </div>
       <% end %>
       <!--戻るボタン-->
-      <%= link_to @customers, class: "customers_#{@customers.id}" do %>
+      <%= link_to @end_user, class: "end_user_#{@end_user.id}" do %>
         <div class="flex-colum mx-3 text_center">
           <i class="fas fa-arrow-circle-left"></i> マイページへ戻る
         </div>
