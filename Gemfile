@@ -43,7 +43,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem "webpacker",    '~> 5.0'
+gem "webpacker", '~> 5.0'
 
 # Use Sass to process CSS
 gem "sassc-rails"
